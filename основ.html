@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+        <title>Сайт</title>
+        <link rel="stylesheet" href="%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9.css">
+              </head>
+<body>
+    <div class="navbar">
+        <!--
+  <a href="#home">Главная</a>
+  <a href="#news">Новости</a> -->
+
+  <div class="dropdown">
+    <button class="dropbtn">Меню
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="%D0%BE%D1%81%D0%BD%D0%BE%D0%B2.html">Главная</a>
+      <a href="%D0%B3%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D1%8F.html">Галерея</a>
+      <a href="%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE.html">Портфолио</a>
+      <a href="%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B2%D1%8F%D0%B7%D1%8C.html">Обратная связь</a>
+    </div>
+  </div>
+</div>
+    
+    <div>
+<p>Кострома</p>       
+<button class="collapsible">Основание</button>
+<div class="content">
+  <p>По мнению историка Татищева, Кострому основал
+в 1152 году Юрий Долгорукий. Первое упоминание
+о городе датировано 1213 г. - летописец повествует
+о распрях за город между наследниками Всеволода
+Большое Гнездо.</p>
+</div>
+<button class="collapsible">Вошла в состав</button>
+<div class="content">
+  <p>В состав Московского княжества Кострома вошла
+в 1364-м. Спустя 16 лет костромские дружинники
+приняли участие в Куликовской битве, где спасли
+жизнь раненному Дмитрию Донскому, а спустя 2 года, московский князь укрывался в Костроме от набега хана Тохтамыша.</p>
+</div>
+<button class="collapsible">Смута</button>
+<div class="content">
+  <p>В годы Смуты, в 1609 году костромское ополчение
+после 6-ти месяцев осады освободило Ипатьевский монастырь от отрядов польских интервентов, для
+которых обитель служила лагерем, откуда они
+совершали набеги на близлежащие земли.</p>
+</div>
+      </div> 
+    <footer>
+      <p>Никита Д.</p>
+        <p> Тел.: 8-999-666-13-13</p>
+    </footer>
+<script>   
+   
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}    
+</script>
+</body>
+</html>
